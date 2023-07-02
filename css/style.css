@@ -450,6 +450,7 @@ footer > div > div:nth-child(3) > a, footer > div > div:nth-child(3) p {
   border: 1px #222 solid;
   padding: 9px 19px;
   cursor: pointer;
+  background: #fff;
 }
 
 .adminka {
@@ -475,7 +476,7 @@ footer > div > div:nth-child(3) > a, footer > div > div:nth-child(3) p {
   justify-content: center;
   margin-bottom: 20px;
 }
-.admin-tools > div > form > div > input, .admin-tools > div > form > div textarea {
+.admin-tools > div > form > div > input, .admin-tools > div > form > div textarea, .admin-tools > div > form > div select {
   width: 200px;
   height: 28px;
   border: 1px solid var(--2, #425E72);
@@ -507,11 +508,13 @@ footer > div > div:nth-child(3) > a, footer > div > div:nth-child(3) p {
   color: #fff;
   border: 0;
   width: 100%;
+  cursor: pointer;
 }
 .admin-tools > div > form > input:hover {
   color: #222;
   border: 1px #222 solid;
   padding: 9px 19px;
+  background: #fff;
 }
 .admin-tools > div > div:nth-child(3), .admin-tools > div div:nth-child(4), .admin-tools > div div:nth-child(5) {
   display: flex;
@@ -533,7 +536,7 @@ footer > div > div:nth-child(3) > a, footer > div > div:nth-child(3) p {
   width: 342px;
 }
 
-#productList, #result {
+#productList, #AgentsList, #result, #DealsList, #DistrictList, #RoomsList, #UsersList, #TypeList, #StatusList, #ClientsList {
   color: #222222;
   font-size: 14px;
   font-family: Montserrat;
@@ -543,7 +546,7 @@ footer > div > div:nth-child(3) > a, footer > div > div:nth-child(3) p {
   border: 1px #222 solid;
   padding: 10px 20px;
 }
-#productList > ul > li, #result > ul > li {
+#productList > ul > li, #AgentsList > ul > li, #result > ul > li, #DealsList > ul > li, #DistrictList > ul > li, #RoomsList > ul > li, #UsersList > ul > li, #TypeList > ul > li, #StatusList > ul > li, #ClientsList > ul > li {
   list-style: none;
 }
 

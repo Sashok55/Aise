@@ -7,16 +7,16 @@ if ($conn->connect_error) {
     die("Ошибка подключения к базе данных: " . $conn->connect_error);
 }
 
-// Удаление продукта
-if (isset($_POST['id'])) {
-    $id = $_POST['id'];
+// Добавление района
+if (isset($_POST['name'])) {
+    $name = $_POST['name'];
 
-    $sql = "DELETE FROM Product WHERE id_product='$id'";
+    $sql = "INSERT INTO district (name) VALUES ('$name')";
 
     if ($conn->query($sql) === TRUE) {
-        echo "Продукт успешно удален.";
+        echo "Район успешно добавлен.";
     } else {
-        echo "Ошибка при удалении продукта: " . $conn->error;
+        echo "Ошибка при добавлении района: " . $conn->error;
     }
 }
 

@@ -7,16 +7,16 @@ if ($conn->connect_error) {
     die("Ошибка подключения к базе данных: " . $conn->connect_error);
 }
 
-// Удаление продукта
-if (isset($_POST['id'])) {
-    $id = $_POST['id'];
+// Удаление статуса
+if (isset($_POST['id_status'])) {
+    $id = $_POST['id_status'];
 
-    $sql = "DELETE FROM Product WHERE id_product='$id'";
+    $sql = "DELETE FROM status WHERE id_status='$id'";
 
     if ($conn->query($sql) === TRUE) {
-        echo "Продукт успешно удален.";
+        echo "Статус успешно удален.";
     } else {
-        echo "Ошибка при удалении продукта: " . $conn->error;
+        echo "Ошибка при удалении статуса: " . $conn->error;
     }
 }
 

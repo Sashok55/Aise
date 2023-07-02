@@ -423,6 +423,8 @@ footer {
     border:1px #222 solid;
     padding: 9px 19px;
     cursor: pointer;
+    background: #fff;
+
   }
 }
 .adminka{
@@ -447,7 +449,7 @@ footer {
         align-items: center;
         justify-content: center;
         margin-bottom: 20px;
-        &>input, textarea{
+        &>input, textarea, select{
           width: 200px;
           height: 28px;
           border: 1px solid var(--2, #425E72);
@@ -480,11 +482,13 @@ footer {
         color: #fff;
         border: 0;
         width: 100%;
+        cursor: pointer;
       }
       &>input:hover{
         color: #222;
         border:1px #222 solid;
         padding: 9px 19px;
+        background: #fff;
       }
       
     }
@@ -510,7 +514,7 @@ footer {
     }
   }
 }
-#productList, #result{
+#productList,#AgentsList, #result, #DealsList,#DistrictList,#RoomsList,#UsersList,#TypeList,#StatusList,#ClientsList{
   color: #222222;
   font-size: 14px;
   font-family: Montserrat;
